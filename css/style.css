@@ -19,7 +19,7 @@
 .blogs{
     grid-template-columns: repeat(2, 1fr);
 }
-.player .blog{
+.player, .blog{
     display: flex;
     align-items: center;
 }
@@ -31,12 +31,20 @@
     width: 200px;
     margin-right: 20px;
 }
+.filled{
+    color: goldenrod;
+    font-size: 0.8em;
+}
+.unfilled{
+    color: lightgray;
+    font-size: 0.8em;
+}
 @media (max-width:992px){
     .top-players{
         grid-template-columns: repeat(2, 1fr);
        }
     .blogs{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 @media (max-width:688px){
